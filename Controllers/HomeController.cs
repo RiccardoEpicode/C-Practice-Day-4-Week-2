@@ -33,6 +33,11 @@ namespace C__Day_3_ASP.NET_MVC.Controllers
         {
             return View();
         }
+        public IActionResult Conferma()
+        {
+            return View();
+        }
+
 
     }
 }

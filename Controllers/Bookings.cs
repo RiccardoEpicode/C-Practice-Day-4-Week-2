@@ -27,7 +27,9 @@ namespace C__Day_3_ASP.NET_MVC.Controllers
                 TempData["SuccessMessage"] = $"{hall} is sold out!";
             }
 
-            return RedirectToAction("Biglietti", "Home");
+            return RedirectToAction("Conferma", "Home");
         }
+
+
     }
 }

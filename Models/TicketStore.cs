@@ -2,7 +2,7 @@
 {
     public static class TicketsStore
     {
-        public static Dictionary<string, int> Tickets = new()
+        public static Dictionary<string, int> Tickets = new() 
         {
             { "North Hall", 12 },
             { "East Hall", 5 },
