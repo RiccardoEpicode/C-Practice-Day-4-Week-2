@@ -1,0 +1,28 @@
+﻿.remaining-tickets {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
+
+    .remaining-tickets span {
+        color: #dc3545; /* Bootstrap red */
+        animation: pulse 1.2s infinite ease-in-out;
+        font-weight: 700;
+    }
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

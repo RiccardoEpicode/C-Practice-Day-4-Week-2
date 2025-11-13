@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">About Cinema Politeama</h1>
+        <p class="lead text-muted">
+            Where stories come alive on the big screen.
+            Established in 1998, Cinema Politeama has been the heart of entertainment for film lovers of all ages.
+        </p>
+    </div>
+
+    <!-- About Section -->
+    <section class="mb-5">
+        <div class="row align-items-center text-center">
+            <h2 class="fw-bold text-secondary mb-3">Our Story</h2>
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="~/Pics/Politeama.jpg"
+                     alt="Cinema Politeama"
+                     class="w-100 rounded shadow-sm object-fit-cover"
+                     style="height: 250px;" />
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted">
+                    At Cinema Politeama, we believe movies are more than just entertainment —
+                    they are experiences that inspire, unite, and move people.
+                    Our theater combines modern sound and projection technology with a comfortable,
+                    family-friendly environment.
+                </p>
+                <p class="text-muted">
+                    From the latest Hollywood blockbusters to independent films and cultural classics,
+                    we curate a diverse selection for every taste. Whether you’re here for a premiere
+                    or a cozy night out, you’ll always find something special at Cinema Politeama.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section>
+        <h2 class="fw-bold text-secondary mb-3 text-center">Our Privacy Commitment</h2>
+        <p class="text-muted text-center mb-4">
+            Your trust matters to us. We’re committed to protecting your personal data.
+        </p>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Information We Collect</h5>
+                <p class="card-text">
+                    When booking tickets or subscribing to our newsletter, we collect your name,
+                    email address, and payment details. This information is used solely to
+                    process your order and provide you with the best possible service.
+                </p>
+
+                <h5 class="card-title text-primary mt-4">How We Use Your Data</h5>
+                <ul class="text-muted">
+                    <li>To confirm bookings and send you e-tickets</li>
+                    <li>To share updates about upcoming movies or special offers</li>
+                    <li>To improve our website and customer experience</li>
+                </ul>
+
+                <h5 class="card-title text-primary mt-4">Your Rights</h5>
+                <p class="card-text">
+                    You can request to view, modify, or delete your personal information at any time by
+                    contacting us at <a href="mailto:info@cinemapoliteama.com">info@cinemapoliteama.com</a>.
+                </p>
+
+                <p class="card-text mt-4">
+                    We never sell or share your data with third parties.
+                    All transactions are encrypted and handled through secure payment gateways.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back button -->
+    <div class="text-center mt-5">
+        <a asp-controller="Home" asp-action="Home" class="btn btn-outline-primary">
+            Back to Home
+        </a>
+    </div>
+</div>

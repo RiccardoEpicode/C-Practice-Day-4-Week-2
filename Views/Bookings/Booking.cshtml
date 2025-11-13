@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Booking";
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">Book Your Seat</h1>
+        <p class="lead text-muted">
+            Complete your reservation for <strong>@ViewBag.Hall</strong>.
+        </p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Booking" method="post" class="card shadow p-4">
+                <div class="mb-3">
+                    <input class="form-control" name="hall" value="@ViewBag.Hall" readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter your name" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Confirm Booking</button>
+                <a asp-controller="Home" asp-action="Biglietti" class="btn btn-outline-secondary mt-3 w-100">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

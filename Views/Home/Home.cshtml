@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <!-- Hero Section -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Welcome to Cinema Politeama</h1>
+        <p class="lead text-muted">Experience the magic of movies on the big screen — every day, all week.</p>
+        <img src="~/Pics/Politeama1.png"
+             alt="Cinema Hall" class="img-fluid rounded shadow mt-4" style="max-height: 400px; object-fit: cover;">
+    </div>
+
+    <!-- About Section -->
+    <section class="text-center mb-5">
+        <h2 class="fw-bold text-secondary mb-3">About Our Cinema</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">
+            Cinema Politeama offers the latest blockbusters, indie gems, and timeless classics —
+            all in a cozy, modern atmosphere with top-quality sound and visuals.
+        </p>
+    </section>
+
+    <!-- Movies Section -->
+    <section>
+        <h2 class="text-center fw-bold mb-4">Now Showing 🍿</h2>
+
+        <div class="row justify-content-center">
+            <!-- Movie 1 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=600" class="card-img-top object-fit-cover" style="height: 300px;" alt="Movie Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">The Lost Galaxy</h5>
+                        <p class="card-text text-muted">An epic sci-fi adventure through space and time. PG-13 | 2h 10min</p>
+                        <a asp-controller="Home" asp-action="Biglietti" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?w=600" class="card-img-top object-fit-cover" style="height: 300px;" alt="Movie Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Love in Rome</h5>
+                        <p class="card-text text-muted">A romantic journey through the heart of Italy. PG | 1h 55min</p>
+                        <a asp-controller="Home" asp-action="Biglietti" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1542206395-9feb3edaa68d?w=600" class="card-img-top object-fit-cover" style="height: 300px;" alt="Movie Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Nightfall City</h5>
+                        <p class="card-text text-muted">A gripping thriller that will keep you guessing. R | 2h 5min</p>
+                        <a asp-controller="Home" asp-action="Biglietti" class="btn btn-primary">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,9 @@
+# File e cartelle da ignorare in progetti Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.tmp

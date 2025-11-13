@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Tickets";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Biglietti.css" asp-append-version="true" />
+</head>
+
+<div class="container mt-5">
+
+    <!-- Success message -->
+    @if (ViewBag.SuccessMessage != null)
+    {
+        <div class="alert alert-success text-center">@ViewBag.SuccessMessage</div>
+    }
+
+    <!-- Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">Book Your Tickets</h1>
+        <p class="lead text-muted">
+            Choose your favorite screening room at <strong>Cinema Politeama</strong> and enjoy an unforgettable movie experience.
+        </p>
+    </div>
+
+    <!-- Ticket Rooms -->
+    <div class="row justify-content-center">
+
+        <!-- North Hall -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="ratio ratio-16x9">
+                    <img src="~/Pics/salaNord.png" class="card-img-top object-fit-cover" alt="North Hall">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">North Hall</h5>
+                    <p class="card-text text-muted">
+                        Spacious and modern, featuring Dolby Surround sound and luxury seating.
+                    </p>
+                    <h6 class="remaining-tickets">
+                        Remaining Tickets <span>@ViewBag.Tickets["North Hall"]</span>
+                    </h6>
+
+                    <a asp-controller="Bookings"
+                       asp-action="Booking"
+                       asp-route-hall="North Hall"
+                       class="btn btn-primary">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- East Hall -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="ratio ratio-16x9">
+                    <img src="~/Pics/salaEst.png" class="card-img-top object-fit-cover" alt="East Hall">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">East Hall</h5>
+                    <p class="card-text text-muted">
+                        Perfect for indie films and cultural screenings in high definition.
+                    </p>
+                    <h6 class="remaining-tickets">
+                        Remaining Tickets <span>@ViewBag.Tickets["East Hall"]</span>
+                    </h6>
+
+                    <a asp-controller="Bookings"
+                       asp-action="Booking"
+                       asp-route-hall="East Hall"
+                       class="btn btn-primary">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- South Hall -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="ratio ratio-16x9">
+                    <img src="~/Pics/salaSud.png" class="card-img-top object-fit-cover" alt="South Hall">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">South Hall</h5>
+                    <p class="card-text text-muted">
+                        A cozy atmosphere ideal for evening shows and family favorites.
+                    </p>
+                    <h6 class="remaining-tickets">
+                        Remaining Tickets <span>@ViewBag.Tickets["South Hall"]</span>
+                    </h6>
+
+                    <a asp-controller="Bookings"
+                       asp-action="Booking"
+                       asp-route-hall="South Hall"
+                       class="btn btn-primary">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="text-center mt-4">
+        <a asp-controller="Home" asp-action="Home" class="btn btn-outline-primary">
+            Back to Home
+        </a>
+    </div>
+</div>

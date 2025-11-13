@@ -1,0 +1,15 @@
+ESERCITAZIONE DA COMPLETARE IN DUE POMERIGGI
+
+Un cinema multisala vuole gestire la vendita dei biglietti per l'accesso alle proprie sale in modo automatico e veloce. 
+
+Le nuove direttire antiCoVid, hanno obbligato il gestore del multisala ad attrezzarsi di un sistema informatico che gli consenta di vendere un biglietto, contestualmente memorizzando il nominativo dell'ospite che accede alla struttura.
+
+La struttura multisala, è composta da 3 sale identificate dal nome 'SALA NORD', 'SALA EST' e 'SALA SUD'.
+
+L'addetto al botteghino dovrà reperire e archiviare, obbligatoriamente, il nome ed il cognome dell'utente, selezionare la sala alla quale accede, ed indicare il tipo di biglietto. Quest'ultimo può essere ridotto oppure intero.
+
+Sulla stessa schermata, in tempo reale, il sistema deve aggiornare, dopo ogni prenotazione, il numero di biglietti venduti per ogni sala, indicando anche il numero dei biglietti venduti di tipo Ridotto.
+
+Ogni sala ha una capienza massima di 120 posti.
+
+La applicazione dovrà essere una WebApplication in MVC CORE e deve utilizzare le liste statiche per la memorizzazione dei dati.
